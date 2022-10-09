@@ -19,22 +19,20 @@ public class Carrera extends Thread{
      int grupo1 = 0;
      int grupo2 = 0;
      int aforo=0;
-        while(true){
-            aforo+=20;
+        while(aforo<1000){
+            aforo+=100;
             try{
                 
                 sleep((int)(Math.random() * 1000));
                 grupo1 = auto.getPrimerAuto().getLocation().x;
                 grupo2 = auto.getSegundoAuto().getLocation().x;
                 
-                if(grupo1 < auto.getBArrera1().getLocation().x - 125 && grupo2 < auto.getBArrera2().getLocation().x - 125){
-                    etiqueta.setLocation(etiqueta.getLocation().x+50, etiqueta.getLocation().y-10);
+                    etiqueta.setLocation(etiqueta.getLocation().x+50, etiqueta.getLocation().y);
                     auto.repaint();
-                } else {
+                    System.out.println(grupo1);
                     
-                    break;
+      
                     
-                }
                 
             }catch(InterruptedException e){
                 System.out.println(e);

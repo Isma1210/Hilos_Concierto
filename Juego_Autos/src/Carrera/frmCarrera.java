@@ -62,17 +62,17 @@ public class frmCarrera extends javax.swing.JFrame {
 
         barrera1.setBackground(new java.awt.Color(102, 153, 255));
         barrera1.setOpaque(true);
-        getContentPane().add(barrera1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, 20, 220));
+        getContentPane().add(barrera1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 20, 220));
 
         segundo_auto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Diseño sin título (1).png"))); // NOI18N
-        getContentPane().add(segundo_auto, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 140, 150, 130));
+        getContentPane().add(segundo_auto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 150, 130));
 
         primer_auto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Diseño sin título (1).png"))); // NOI18N
-        getContentPane().add(primer_auto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 150, 130));
+        getContentPane().add(primer_auto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 150, 130));
 
         barrera2.setBackground(new java.awt.Color(102, 153, 255));
         barrera2.setOpaque(true);
-        getContentPane().add(barrera2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 20, 220));
+        getContentPane().add(barrera2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 20, 220));
 
         jButton1.setText("Iniciar Simulacion");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -94,7 +94,7 @@ public class frmCarrera extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         primer_auto.setLocation(0, primer_auto.getLocation().y);
-        segundo_auto.setLocation(800, primer_auto.getLocation().y);
+        segundo_auto.setLocation(0, segundo_auto.getLocation().y);
         
         Carrera auto1=new Carrera (primer_auto,this);
         Carrera auto2=new Carrera (segundo_auto,this);
