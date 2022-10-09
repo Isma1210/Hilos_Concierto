@@ -30,13 +30,15 @@ public class Carrera extends Thread{
                     etiqueta.setLocation(etiqueta.getLocation().x+100, etiqueta.getLocation().y);
                     auto.repaint();
                     System.out.println(aforo);
-                    if(grupo1>340 ){
+                    if(grupo1>240 ){
                         auto.getPrimerAuto().setLocation(0, auto.getPrimerAuto().getLocation().y);
                     }
                     
-                    if(grupo2>340){
+                    if(grupo2>240){
                         auto.getSegundoAuto().setLocation(0, auto.getSegundoAuto().getLocation().y);
                     }
+                    
+                    
                     
                 
             }catch(InterruptedException e){
